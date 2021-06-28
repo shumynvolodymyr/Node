@@ -1,0 +1,21 @@
+input[type=submit] {
+    background: #4c920f;
+}
+
+a {
+    background-color: red;
+    color: white;
+    margin: 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+a:hover {
+    background-color: #555;
+}
+.users {
+    border: 1px dotted black;
+    padding: 10px;
+    margin: 2px;
+    background: lightblue;
+}

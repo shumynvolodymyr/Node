@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>register</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<form action="/register" method="post">
+    <p><label for="name"><input type="text" name="name" value="Name"></label></p>
+    <p><label for="login"><input type="text" name="login" value="Login"></label></p>
+    <p><label for="password"><input type="text" name="password" value="Password"></label></p>
+    <p><label for="email"><input type="email" name="email" value="Email"></label></p>
+    <p><label for="phone"><input type="number" name="phone" placeholder="+38 (077) 777-77-77"></label></p>
+    <input type="submit" value="ENTER">
+</form>
+
+{{#if regErr}}
+    <p>Login or email already registered!</p>
+{{/if}}
+
+</body>
+</html>
